@@ -14,7 +14,7 @@ function Hero() {
     delaySpeed: 2000,
   });
   return (
-    <div className="select-none h-screen flex flex-col space-y-8 items-center justify-center text=center overflow-hidden">
+    <div className="select-none bg-black h-screen flex flex-col space-y-8 items-center justify-center text=center overflow-hidden">
       <BackgroundCircles />
       <img
         className="rounded-full relative h-32 w-32 mx-auto object-cover"
@@ -22,10 +22,10 @@ function Hero() {
         alt=""
       />
       <div className="z-10 ">
-        <h2 className="text-sm lg:text-lg text-center uppercase text-gray-500 pb-2 tracking-[15px] font-semibold px-10">
+        <h2 className="text-xs  lg:text-lg text-center uppercase text-gray-500 pb-2 tracking-[15px] font-semibold px-10">
           Software Engineer
         </h2>
-        <h1 className="text-center text-3xl lg:text-5xl xl:text-5xl">
+        <h1 className="text-center text-2xl lg:text-5xl xl:text-5xl">
           <span className="">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
