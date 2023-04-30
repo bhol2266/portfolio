@@ -14,7 +14,7 @@ function Hero() {
     delaySpeed: 2000,
   });
   return (
-    <div className="select-none bg-black h-screen flex flex-col space-y-8 items-center justify-center text=center overflow-hidden">
+    <div className="select-none  h-screen flex flex-col space-y-8 items-center justify-center text=center overflow-hidden">
       <BackgroundCircles />
       <img
         className="rounded-full relative h-32 w-32 mx-auto object-cover"
