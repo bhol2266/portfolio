@@ -42,6 +42,11 @@ function Header({}) {
           fgColor="gray"
           bgColor="transparent"
         />
+          <SocialIcon
+          url="https://github.com/bhola2266"
+          fgColor="gray"
+          bgColor="transparent"
+        />
       </motion.div>
 
       <motion.div
