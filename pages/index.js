@@ -19,7 +19,7 @@ export default function Home({
   return (
     <div className="bg-bg-color text-white h-screen snap-y snap-mandatory  z-0 font-inter overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
       <Head>
-        <title>Imadsfsad</title>
+        <title>Ashutosh Gupta</title>
       </Head>
 
       <Header />
