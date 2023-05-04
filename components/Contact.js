@@ -80,7 +80,7 @@ function Contact() {
         ></textarea>
 
         <input
-          className="bg-[#F7AB0A] py-5 rounded-md text-black font-bold text-lg"
+          className="bg-[#F7AB0A] py-4 rounded-md text-black font-bold text-lg"
           type="submit"
         />
       </form>

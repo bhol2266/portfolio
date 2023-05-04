@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
+import skill from "@/portfolio/schemas/skill";
 
-function Skills() {
+function Skills({ skills }) {
   return (
     <motion.div
       initial={{
@@ -23,17 +24,9 @@ function Skills() {
       </h3>
 
       <div className="grid grid-cols-4 gap-5">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        {skills.map((skill) => {
+          return <Skill key={skill._id} skill={skill} />;
+        })}
       </div>
     </motion.div>
   );
