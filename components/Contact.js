@@ -9,28 +9,30 @@ function Contact() {
   };
 
   return (
-    <div className="h-screen flex relative flex-col text-center md:text-left lg:flex-row max-w-7xl px-10 just mx-auto items-center justify-evenly">
-      <h3 className="absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl mx-auto ">
+    <div className="h-screen flex relative flex-col text-center md:text-left lg:flex-row  px-10  mx-auto items-center justify-evenly lg:justify-around ">
+      <h3 className="absolute top-24 uppercase tracking-[15px] text-gray-500 text-lg md:text-xl xl:text-2xl mx-auto ">
         Contact me
       </h3>
 
-      <div className="flex flex-col space-y-10 ">
-        <h4 className="text-2xl font-semibold text-center">
+      <div className=" flex flex-col space-y-10 pt-[90px] lg:pt-0">
+        <h4 className="text-xl xl:text-2xl 3xl:text-[32px] font-semibold text-center">
           I have got just what you need. {""}
           <span className="decoration-[#F7AB0A] underline">Lets Talk.</span>
         </h4>
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-2 xl:space-y-4">
           <div className="flex items-center sapce-x-4 justify-center space-x-5">
-            <FaPhone className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-xl">+91-9108825914</p>
+            <FaPhone className="text-[#F7AB0A] xl:h-7 xl:w-7 w-5 h-5  animate-pulse" />
+            <p className="text-md lg:text-xl 2xl:text-2xl 3xl:text-[29px]">+91-9108825914</p>
           </div>
           <div className="flex items-center sapce-x-4 justify-center space-x-5">
-            <FaEnvelope className="text-[#F7AB0A] h-7 w-7 animate" />
-            <p className="text-xl">bhola2266@gmail.com</p>
+            <FaEnvelope className="text-[#F7AB0A] lg:h-7  lg:w-7 w-6 h-6  animate" />
+            <p className="text-md lg:text-xl 2xl:text-2xl 3xl:text-[29px]">bhola2266@gmail.com</p>
           </div>
           <div className="flex items-center sapce-x-4 justify-center space-x-5">
-            <FaMapMarked className="text-[#F7AB0A] h-7 w-7 animate-" />
-            <p className="text-xl">Brigade Road, Bangalore 560090, India </p>
+            <FaMapMarked className="text-[#F7AB0A] lg:h-7  lg:w-7 w-6 h-6  animate-" />
+            <p className="text-sm lg:text-xl 2xl:text-2xl 3xl:text-[29px]">
+              Brigade Road, Bangalore 560090, India{" "}
+            </p>
           </div>
         </div>
       </div>
@@ -38,28 +40,26 @@ function Contact() {
       <form
         action=""
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col space-y-2 w-fit mx-auto"
+        className="flex flex-col space-y-2  w-full sm:w-[400px]   xl:w-[600px] "
       >
-        <div className="flex space-x-2">
-          <input
-            {...register("Name")}
-            className="contactInput"
-            type="text"
-            placeholder="Name"
-            id="Name"
-            name="Name"
-            required
-          />
-          <input
-            {...register("Email")}
-            className="contactInput"
-            type="email"
-            placeholder="Email"
-            id="Email"
-            name="Email"
-            required
-          />
-        </div>
+        <input
+          {...register("Name")}
+          className="contactInput"
+          type="text"
+          placeholder="Name"
+          id="Name"
+          name="Name"
+          required
+        />
+        <input
+          {...register("Email")}
+          className="contactInput"
+          type="email"
+          placeholder="Email"
+          id="Email"
+          name="Email"
+          required
+        />
         <input
           {...register("Subject")}
           className="contactInput"
@@ -80,7 +80,7 @@ function Contact() {
         ></textarea>
 
         <input
-          className="bg-[#F7AB0A] py-4 rounded-md text-black font-bold text-lg"
+          className="bg-[#F7AB0A] py-2 xl:py-4 rounded-md text-black font-bold text-lg"
           type="submit"
         />
       </form>

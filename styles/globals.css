@@ -50,7 +50,7 @@
     @apply px-4 lg:px-6 py-1 lg:py-2 border border-[#242424] rounded-full uppercase text-xs lg:text-sm  tracking-widest text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
   }
   .contactInput {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 transition-all 
-     focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40;
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-4 lg:px-6 py-2 lg:py-3 2xl:py-4 border-[#242424] text-gray-500 transition-all 
+     focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40 text-sm lg:text-[20px] xl:text-lg ;
   }
 }

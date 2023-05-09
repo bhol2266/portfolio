@@ -17,7 +17,7 @@ export default function Home({
   skills,
 }) {
   return (
-    <div className="bg-bg-color text-white h-screen snap-y snap-mandatory  z-0 font-inter overflow-y-scroll overflow-x-hidden md:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
+    <div className="bg-bg-color  text-white h-screen snap-y snap-mandatory  z-0 font-inter overflow-y-scroll overflow-x-hidden md:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
       <Head>
         <title>Ashutosh Gupta</title>
       </Head>
@@ -59,8 +59,8 @@ export default function Home({
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <img
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0"
-              src="https://i.imgur.com/e2yvD6A.png"
+              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 border border-gray-500"
+              src="./profile.png"
               alt=""
             />
           </div>
