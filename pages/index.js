@@ -17,12 +17,27 @@ export default function Home({
   skills,
 }) {
   return (
-    <div className="bg-bg-color text-white h-screen snap-y snap-mandatory  z-0 font-inter overflow-y- sm:overflow-y-scroll overflow-x-hidden  md:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A] ">
+    <div className="bg-bg-color text-white h-screen snap-y snap-mandatory  z-0 font-inter overflow-y-scroll overflow-x-hidden sm:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
       <Head>
         <title>Ashutosh Gupta</title>
       </Head>
 
-  
+      <Header />
+
+      {/* Hero  */}
+      <section id="hero" className="snap-center">
+        <Hero />
+      </section>
+
+      {/* About  */}
+      <section id="about" className="snap-center">
+        <About />
+      </section>
+
+      {/* Experience  */}
+      <section id="experience" className="snap-center">
+        <WorkExperience />
+      </section>
 
       {/* Skills  */}
 
