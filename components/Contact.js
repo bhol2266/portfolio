@@ -9,13 +9,13 @@ function Contact() {
   };
 
   return (
-    <div className="h-screen flex relative flex-col text-center md:text-left lg:flex-row  px-10  mx-auto items-center justify-evenly lg:justify-around ">
+    <div className="h-screen flex relative flex-col text-center md:text-left lg:flex-row  px-4 sm:px-10  mx-auto items-center justify-evenly lg:justify-around ">
       <h3 className="absolute top-24 uppercase tracking-[15px] text-gray-500 text-lg md:text-xl xl:text-2xl mx-auto ">
         Contact me
       </h3>
 
       <div className=" flex flex-col space-y-10 pt-[90px] lg:pt-0">
-        <h4 className="text-xl xl:text-2xl 3xl:text-[32px] font-semibold text-center">
+        <h4 className="text-2xl xl:text-2xl 3xl:text-[32px] font-semibold text-center">
           I have got just what you need. {""}
           <span className="decoration-[#F7AB0A] underline">Lets Talk.</span>
         </h4>
