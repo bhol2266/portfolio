@@ -17,8 +17,8 @@ function Hero() {
     <div className="select-none  h-screen flex flex-col space-y-8 items-center justify-center text=center overflow-hidden">
       <BackgroundCircles />
       <img
-        className="rounded-full relative h-32 w-32 mx-auto object-cover"
-        src="https://media.licdn.com/dms/image/C5603AQGrVn_ITVbnUg/profile-displayphoto-shrink_800_800/0/1634372259576?e=1687996800&v=beta&t=k0NwoTKTGDD5G6GoXR_idIhqwWS2CQUTDVzVIntDMM8"
+        className="rounded-full relative  w-[140px] skew-x-y mx-auto object-cover bg-gray-500"
+        src="./profile.png"
         alt=""
       />
       <div className="z-10 ">
