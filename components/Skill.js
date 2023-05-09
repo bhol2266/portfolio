@@ -9,7 +9,7 @@ export default function Skill({ skill }) {
     <div className="group relative flex cursor-pointer ">
       <motion.img
         initial={{ x: -100, opacity: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.8 }}
         whileInView={{ opacity: 1, x: 0 }}
         src={urlFor(skill?.image).url()}
         alt=""
