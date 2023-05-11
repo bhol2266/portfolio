@@ -16,7 +16,7 @@ export default function ExperienceCard({ experience }) {
           y: 0,
         }}
         viewport={{ once: true }}
-        className="w-32 h-32 xl:w-36 object-cover "
+        className="w-32 h-32 xl:w-40 xl:h-40 object-cover "
         src={urlFor(experience?.companyImage).url()}
         alt=""
       />

@@ -12,7 +12,7 @@ export default function WorkExperience({ experience }) {
       transition={{ duration: 1.5 }}
       className="h-screen relative overflow-hidden flex-col flex text-left md:flex-row max-w-full px-2 sm:px-4 md:px-10 justify-center mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-xl xl:text-2xl">
+      <h3 className="absolute top-[80px] md:top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-xl xl:text-2xl">
         Experience
       </h3>
       <div className=" scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#F7AB0A] w-full flex space-x-5 lg:space-x-10 xl:space-x-[80px] overflow-x-scroll p-10 snap-x snap-mandatory">
