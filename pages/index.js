@@ -36,7 +36,7 @@ export default function Home({
 
       {/* Experience  */}
       <section id="experience" className="snap-center">
-        <WorkExperience />
+        <WorkExperience experience={experience} />
       </section>
 
       {/* Skills  */}
@@ -78,9 +78,11 @@ export async function getStaticProps() {
     useCdn: false,
   });
 
-  const experience = await client.fetch(`*[_type == "experience"]`);
+  const experience = await client.fetch(`*[_type == "experience"]{...,technologies[]->}`);
   const pageInfo = await client.fetch(`*[_type == "pageInfo"]`);
-  const projects = await client.fetch(`*[_type == "project"]`);
+  const projects = await client.fetch(
+    `*[_type == "project"]{...,technologies[]->}`
+  );
   const social = await client.fetch(`*[_type == "social"]`);
   const skills = await client.fetch(`*[_type == "skill"]`);
 
