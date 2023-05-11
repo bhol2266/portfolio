@@ -17,7 +17,7 @@ export default function WorkExperience({ experience }) {
       </h3>
       <div className=" scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#F7AB0A] w-full flex space-x-5 lg:space-x-10 xl:space-x-[80px] overflow-x-scroll p-10 snap-x snap-mandatory">
         {experience.map((obj) => {
-          return <ExperienceCard key={obj._id} experience={obj} />;
+          return <ExperienceCard key={obj._id} experience={obj} />; 
         })}
 
        
