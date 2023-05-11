@@ -20,9 +20,7 @@ export default function WorkExperience({ experience }) {
           return <ExperienceCard key={obj._id} experience={obj} />;
         })}
 
-        {experience.map((obj) => {
-          return <ExperienceCard key={obj._id} experience={obj} />;
-        })}
+       
       </div>
     </motion.div>
   );
