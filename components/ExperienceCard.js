@@ -4,7 +4,7 @@ import { urlFor } from "../sanity";
 
 export default function ExperienceCard({ experience }) {
   return (
-    <article className="relative top-10 md:top-4 flex flex-col rounded-xl items-center space-y-2 flex-shrink-0 w-screen lg:w-[600px] xl:w-[700px] snap-center bg-[#292929] p-4 lg:p-6 2xl:p-10  hover:opacity-100 lg:opacity-40 duration-200 translate-opacity overflow-hidden">
+    <article className="relative top-10 md:top-4 flex flex-col rounded-xl items-center space-y-2 flex-shrink-0 w-screen lg:w-[600px] xl:w-[700px] snap-center bg-[#292929] p-3 sm:p-4 lg:p-6 2xl:p-10  hover:opacity-100 lg:opacity-40 duration-200 translate-opacity overflow-hidden">
       <motion.img
         initial={{
           y: -100,

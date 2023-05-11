@@ -10,7 +10,7 @@ export default function WorkExperience({ experience }) {
       }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen relative overflow-hidden flex-col flex text-left md:flex-row max-w-full px-2 md:px-10 justify-center mx-auto items-center"
+      className="h-screen relative overflow-hidden flex-col flex text-left md:flex-row max-w-full px-2 sm:px-4 md:px-10 justify-center mx-auto items-center"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-xl xl:text-2xl">
         Experience
