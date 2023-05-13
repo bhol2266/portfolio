@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { urlFor } from "../sanity";
 
-function Project() {
-  const projects = [1, 2, 3, 4, 5, 6];
+function Project({projects}) {
 
   return (
     <div className=" h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 ">
@@ -25,21 +25,19 @@ function Project() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.2 }}
-                className="h-[300px] "
-                src="https://media.licdn.com/dms/image/C5603AQGrVn_ITVbnUg/profile-displayphoto-shrink_800_800/0/1634372259576?e=1687996800&v=beta&t=k0NwoTKTGDD5G6GoXR_idIhqwWS2CQUTDVzVIntDMM8"
+                className="h-[250px] sm:h-[350px] lg:h-[400px] xl:h-[600px] 2xl:h-[700px]"
+                src={urlFor(project?.image).url()}
                 alt=""
               />
               <div className="">
                 <h4 className="text-2xl font-semibold text-center">
                   <span className="underline decoration-[#F7AB0A]">
-                    Case Study {i + 1} of {projects.length}
+                    Case Study {i + 1} of {project.title}
                   </span>{" "}
                   : UPS:clone
                 </h4>
                 <p className="text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
-                  reprehenderit minima velit distinctio nisi provident magnam
-                  quia molestiae repellat. Nec
+                  {project.summary}
                 </p>
               </div>
             </div>
