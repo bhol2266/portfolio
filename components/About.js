@@ -34,7 +34,7 @@ function About() {
           background
         </h4>
         <p className="text-xs sm:text-sm lg:text-md 2xl:text-lg">
-        Welcome to my portfolio! I'm Ashutosh Gupta, a Full Stack Developer with a deep-rooted love for crafting innovative and user-centric digital experiences. With a blend of front-end and back-end expertise, I specialize in bringing ideas to life through elegant and efficient web applications.  <br></br>    <br></br>    &nbsp; &nbsp; Throughout my career, I have worked on a wide range of projects, spanning from small startups to large-scale enterprise applications. This diverse experience has equipped me with the ability to adapt quickly to new technologies and problem-solving challenges, ensuring efficient and effective project execution.    </p>
+        Welcome to my portfolio! I&apos;m Ashutosh Gupta, a Full Stack Developer with a deep-rooted love for crafting innovative and user-centric digital experiences. With a blend of front-end and back-end expertise, I specialize in bringing ideas to life through elegant and efficient web applications.  <br></br>    <br></br>    &nbsp; &nbsp; Throughout my career, I have worked on a wide range of projects, spanning from small startups to large-scale enterprise applications. This diverse experience has equipped me with the ability to adapt quickly to new technologies and problem-solving challenges, ensuring efficient and effective project execution.    </p>
       </div>
     </motion.div>
   );
