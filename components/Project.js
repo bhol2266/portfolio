@@ -6,7 +6,7 @@ import Link from "next/link";
 function Project({ projects }) {
   return (
     <div className=" h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 ">
-      <h3 className="absolute top-[80px] md:top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-xl xl:text-2xl" >
+      <h3 className="absolute top-[80px] md:top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-xl 2xl:text-2xl" >
         Projects
       </h3>
 
@@ -31,10 +31,10 @@ function Project({ projects }) {
                 alt=""
               />
               
-              <div className="pt-10">
+              <div className="pt-10 lg:w-9/10 2xl:w-4/5 mx-auto">
                 <a
                   target="_blank"
-                  href={"https://www.closm.com/"}
+                  href={project.linktoBuild}
                   className="text-lg lg:text-xl  2xl:text-2xl font-semibold text-center"
                 >
                   <span className="underline decoration-[#F7AB0A] font-light">

@@ -9,9 +9,9 @@ function About() {
       }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-5 sm:px-10 justify-evenly mx-auto items-center  md:space-x-4"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-[80px] md:top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-xl 2xl:text-2xl" >
         About
       </h3>
       <motion.img
@@ -22,26 +22,19 @@ function About() {
         transition={{ duration: 1.2 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
-        className="-mb-20 md:mb-0 flex-shrink w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="-mb-20 md:mb-0 flex-shrink  rounded-full object-cover md:rounded-lg w-56  md:w-[300px] 2xl:w-[500px] lg:w-[400px]"
         src="https://media.licdn.com/dms/image/C5603AQGrVn_ITVbnUg/profile-displayphoto-shrink_800_800/0/1634372259576?e=1687996800&v=beta&t=k0NwoTKTGDD5G6GoXR_idIhqwWS2CQUTDVzVIntDMM8"
         alt=""
       ></motion.img>
 
       <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-3xl font-semibold">
+        <h4 className="text-xl md:text-2xl 2xl:text-3xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]"> little</span>{" "}
           background
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          mollitia, quam, molestiae expedita nam ab perferendis in impedit
-          quibusdam earum aliquam nostrum sequi nobis, esse pariatur reiciendis
-          repudiandae molestias ratione?Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Numquam, iure pariatur nisi esse totam saepe ipsa
-          fugiat iusto sed adipisci veniam, consequatur, maiores neque tempore
-          quos delectus. Aperiam, minus veniam.
-        </p>
+        <p className="text-xs sm:text-sm lg:text-md 2xl:text-lg">
+        Welcome to my portfolio! I'm Ashutosh Gupta, a Full Stack Developer with a deep-rooted love for crafting innovative and user-centric digital experiences. With a blend of front-end and back-end expertise, I specialize in bringing ideas to life through elegant and efficient web applications.  <br></br>    <br></br>    &nbsp; &nbsp; Throughout my career, I have worked on a wide range of projects, spanning from small startups to large-scale enterprise applications. This diverse experience has equipped me with the ability to adapt quickly to new technologies and problem-solving challenges, ensuring efficient and effective project execution.    </p>
       </div>
     </motion.div>
   );
