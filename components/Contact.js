@@ -1,11 +1,21 @@
 import { FaEnvelope, FaMapMarked, FaPhone } from "react-icons/fa";
 import React from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 function Contact() {
   const { register, handleSubmit } = useForm();
-  const onSubmit = (formdata) => {
-    window.location.href = `mailto:bhola2266@gmail?subject=${formdata.Subject}&body=Hi, my nmae is ${formdata.Name}. ${formdata.Message} (${formdata.Email})`;
+  const onSubmit = async (formdata) => {
+    try {
+      // Make a POST request to the API route
+      await axios.post("/api/sendEmail", {Name:formdata.Name, Email:formdata.Email, Message:formdata.Message });
+
+      // Email sent successfully
+    alert("We have received your message!");
+    } catch (error) {
+      // Error occurred while sending the email
+      console.error("Failed to send email:", error);
+    }
   };
 
   return (
@@ -22,11 +32,15 @@ function Contact() {
         <div className="flex flex-col space-y-2 xl:space-y-4">
           <div className="flex items-center sapce-x-4 justify-center space-x-5">
             <FaPhone className="text-[#F7AB0A] xl:h-7 xl:w-7 w-5 h-5  animate-pulse" />
-            <p className="text-md lg:text-xl 2xl:text-2xl 3xl:text-[29px]">+91-9108825914</p>
+            <p className="text-md lg:text-xl 2xl:text-2xl 3xl:text-[29px]">
+              +91-9108825914
+            </p>
           </div>
           <div className="flex items-center sapce-x-4 justify-center space-x-5">
             <FaEnvelope className="text-[#F7AB0A] lg:h-7  lg:w-7 w-6 h-6  animate" />
-            <p className="text-md lg:text-xl 2xl:text-2xl 3xl:text-[29px]">bhola2266@gmail.com</p>
+            <p className="text-md lg:text-xl 2xl:text-2xl 3xl:text-[29px]">
+              bhola2266@gmail.com
+            </p>
           </div>
           <div className="flex items-center sapce-x-4 justify-center space-x-5">
             <FaMapMarked className="text-[#F7AB0A] lg:h-7  lg:w-7 w-6 h-6  animate-" />
