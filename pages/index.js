@@ -43,7 +43,7 @@ export default function Home({
 
       {/* Skills  */}
 
-      <section id="skill" className="snap-center">
+      <section id="skills" className="snap-center">
         <Skills skills={skills} />
       </section>
 
