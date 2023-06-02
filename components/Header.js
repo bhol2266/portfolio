@@ -46,7 +46,7 @@ function Header({}) {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://github.com/bhola2266"
+          url="https://github.com/bhol2266"
           fgColor="gray"
           bgColor="transparent"
         />
