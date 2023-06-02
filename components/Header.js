@@ -2,12 +2,11 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import styles from '../styles/user-Select-none.css';
 
 
 function Header({}) {
   return (
-    <header className="p-5 flex items-center justify-between sticky top-0 max-w-7xl mx-auto z-20">
+    <header className="select-none p-5 flex items-center justify-between sticky top-0 max-w-7xl mx-auto z-20">
       <motion.div
         initial={{
           x: -500,
