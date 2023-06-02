@@ -23,7 +23,7 @@ function About() {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         className="-mb-20 md:mb-0 flex-shrink  rounded-full object-cover md:rounded-lg w-56  md:w-[300px] 2xl:w-[500px] lg:w-[400px]"
-        src="https://media.licdn.com/dms/image/C5603AQGrVn_ITVbnUg/profile-displayphoto-shrink_800_800/0/1634372259576?e=1687996800&v=beta&t=k0NwoTKTGDD5G6GoXR_idIhqwWS2CQUTDVzVIntDMM8"
+        src="./profile.png"
         alt=""
       ></motion.img>
 
