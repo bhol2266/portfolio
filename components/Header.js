@@ -33,11 +33,11 @@ function Header({}) {
           fgColor="gray"
           bgColor="transparent"
         />
-        <SocialIcon
+        {/* <SocialIcon
           url="https://youtube.com/bhola2266"
           fgColor="gray"
           bgColor="transparent"
-        />
+        /> */}
         <SocialIcon
           url="https://instagram.com/bhola.g"
           fgColor="gray"
@@ -49,6 +49,11 @@ function Header({}) {
           bgColor="transparent"
         />
       </motion.div>
+
+      <div className="flex items-center justify-center">
+      <a href="./resume.pdf" download>
+        <img src="./briefcase.png" alt="" className="h-6 mx-4 cursor-pointer" />
+      </a>
 
       <Link href="#contact">
         <motion.div
@@ -78,6 +83,9 @@ function Header({}) {
           </p>
         </motion.div>
       </Link>
+      </div>
+
+    
     </header>
   );
 }
