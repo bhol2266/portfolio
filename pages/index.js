@@ -20,7 +20,10 @@ export default function Home({
   return (
     <div className="bg-bg-color  text-white h-screen snap-y snap-mandatory  z-0 font-inter overflow-y-scroll overflow-x-hidden md:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
       <Head>
-        <title>Ashutosh Gupta</title>
+        <title>Ashutosh Gupta | Full Stack Developer</title>
+        <meta name="description"
+          content="Creative developer, freelancer, former lead developer at Codeouts.com. I design and code beautifully simple things, and I love what I do." />
+
       </Head>
 
       <Header />
