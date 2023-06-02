@@ -50,42 +50,45 @@ function Header({}) {
         />
       </motion.div>
 
-      <div className="flex items-center justify-center">
-      <a href="./resume.pdf" download>
-        <img src="./briefcase.png" alt="" className="h-6 mx-4 cursor-pointer" />
-      </a>
-
-      <Link href="#contact">
-        <motion.div
-          initial={{
-            x: 500,
-            opacity: 0,
-            scale: 0.5,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          className="flex items-center  cursor-pointer"
-        >
-          <SocialIcon
-            network="email"
-            className="cursor-pointer"
-            fgColor="gray"
-            bgColor="transparent"
+      <motion.div
+        initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1,
+        }}
+        className="flex items-center  cursor-pointer"
+      >
+        <a href="./resume.pdf" download>
+          <img
+            src="./briefcase.png"
+            alt=""
+            className="h-6 mx-4 cursor-pointer"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400 ">
-            Get in touch
-          </p>
-        </motion.div>
-      </Link>
-      </div>
+        </a>
 
-    
+        <Link href="#contact">
+          <div>
+            <SocialIcon
+              network="email"
+              className="cursor-pointer"
+              fgColor="gray"
+              bgColor="transparent"
+            />
+          </div>
+        </Link>
+
+        <p className="uppercase hidden md:inline-flex text-sm text-gray-400 ">
+          Get in touch
+        </p>
+      </motion.div>
     </header>
   );
 }

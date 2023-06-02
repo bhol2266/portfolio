@@ -6,7 +6,6 @@ export default async function handler(req, res) {
   // Extract the email details from the request body
   const { Name, Email, Message } = req.body;
 
-  console.log(req.body);
 
   try {
     // Create a transporter using Gmail's SMTP server configuration

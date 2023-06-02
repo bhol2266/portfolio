@@ -17,7 +17,6 @@ export default function Home({
   skills,
 }) {
 
-  console.log(projects);
   return (
     <div className="bg-bg-color  text-white h-screen snap-y snap-mandatory  z-0 font-inter overflow-y-scroll overflow-x-hidden md:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
       <Head>
