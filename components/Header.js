@@ -35,11 +35,11 @@ function Header({}) {
           fgColor="gray"
           bgColor="transparent"
         />
-        {/* <SocialIcon
-          url="https://youtube.com/bhola2266"
+        <SocialIcon
+          url="https://www.linkedin.com/in/ashutosh-gupta-b5135b18a/"
           fgColor="gray"
           bgColor="transparent"
-        /> */}
+        />
         <SocialIcon
           url="https://instagram.com/bhola.g"
           fgColor="gray"
