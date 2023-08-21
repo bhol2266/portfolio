@@ -23,7 +23,7 @@ export default function Home({
         <title>Ashutosh Gupta | Full Stack Developer</title>
         <meta name="description"
           content="Creative developer, freelancer, former lead developer at Codeouts.com. I design and code beautifully simple things, and I love what I do." />
-
+<meta name="facebook-domain-verification" content="6yy3ggf09t6py7gr8gdaqrt04x1ie6" />
       </Head>
 
       <Header />
